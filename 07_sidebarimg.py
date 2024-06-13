@@ -28,4 +28,5 @@ if userId == 'artseintist' :
     else:
         st.write("패스워드 다시 입력하시오")
 else:
-    Image.open('Vermeer.png')
+    im2 = Image.open('Vermeer.png')
+    st.image(im2)
