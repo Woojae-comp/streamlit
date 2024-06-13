@@ -22,5 +22,5 @@ sel_img_index = sel_opt.index(user_opt)
 # 선택한 항목의 맞는 이미지 파일이 무엇인지 지정
 
 image_file = image_files[sel_img_index]
-img_local = Image.open(r'D:/workspace_cwj/visual\data/'+image_file)
+img_local = Image.open(image_file)
 st.image(img_local, caption=user_opt)
