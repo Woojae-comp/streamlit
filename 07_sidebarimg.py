@@ -3,15 +3,14 @@ from PIL import Image
 
 # 사이드바 구성
 
-st.sidebar.title("사이드바")
-st.sidebar.header("텍스트 입력")
+st.sidebar.title("Artseintist")
+st.sidebar.header("Login")
 userId = st.sidebar.text_input("ID", value="streamlit", max_chars=15)
 userPw = st.sidebar.text_input("ID", value="abcd", type="password")
+Image.open('Vermeer.png')
 
 if userId == 'artseintist' : 
     if userPw == 'apfhdapfhd9!':
-        st.write("로그인 성공")
-
         st.sidebar.header("셀렉트 박스")
         sel_opt=['진주 귀걸이를 한 소녀', '별이 빛나는 밤', '절규', '월하정연']
         user_opt = st.sidebar.selectbox("좋아하는 작품은?", sel_opt)
