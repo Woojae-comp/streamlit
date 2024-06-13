@@ -7,7 +7,6 @@ st.sidebar.title("Artseintist")
 st.sidebar.header("Login")
 userId = st.sidebar.text_input("ID", value="streamlit", max_chars=15)
 userPw = st.sidebar.text_input("ID", value="abcd", type="password")
-Image.open('Vermeer.png')
 
 if userId == 'artseintist' : 
     if userPw == 'apfhdapfhd9!':
@@ -29,4 +28,4 @@ if userId == 'artseintist' :
     else:
         st.write("패스워드 다시 입력하시오")
 else:
-    st.write("없는 아이디 입니다")
+    Image.open('Vermeer.png')
